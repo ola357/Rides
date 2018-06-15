@@ -1,10 +1,30 @@
-header{
-	border-color: #603;
-	background-color: #444;
+header{	
+	background-color: green;
+	
+    padding: 30px;
+    text-align: left;
+    font-1: 35px;
+    color: white;
+	height: 30%;
+margin: 10px;
 }
 section{
-	border-color: #413;
+	background-color: orange;
+	
+    padding: 30px;
+    text-align: center;
+    font-1: 15px;
+    color: violet;
+	height: 50%;
+margin: 10px;
 }
 footer{
-	border-color: #280;
+	background-color: black;
+	
+    padding: 30px;
+    text-align: left;
+    font-1: 5px;
+    color: white;
+
+margin: 10px;
 }
