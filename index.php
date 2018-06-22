@@ -1,1 +1,1 @@
-<?php header( 'Location: /index.html' ) ;  ?>
+<?php header( 'Location: C/Users/user 168/Documents/GitHub/Rides/index.html' ) ;  ?>
