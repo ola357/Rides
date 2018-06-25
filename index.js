@@ -5,8 +5,10 @@ app.use(express.json());
 
 
 const rides = [
-{rideId: 1, name: 'ola', ridesTaken: 0, ridesOffered: 0, gender: 'male', location: 'Mushin', destination:'lekki' },
-{rideId: 2, name: 'ope', ridesTaken: 0, ridesOffered: 0, gender: 'male', location: 'Mushin', destination:'lekki' }
+{rideId: 1, name: 'ola', ridesTaken: 0, ridesOffered: 0, gender: 'male',
+ location: 'Mushin', destination:'lekki', accepted:false },
+{rideId: 2, name: 'ope', ridesTaken: 0, ridesOffered: 0, gender: 'male', 
+location: 'Mushin', destination:'lekki', accepted:true }
 ];
 
 app.get('/', (req, res)=>{
@@ -15,11 +17,11 @@ app.get('/', (req, res)=>{
 
 //fetch all ride offers
 app.get('/api/v1/rides', (req, res) => {
-	res.sendFile('rides.html', options, (err)=> {
+	res.sendFile('C:/Users/user 168/Documents/GitHub/Rides/rides.html', (err)=> {
 		if (err) {
 		  next(err);
 		} else {
-		  console.log('Sent:', fileName);
+		  console.log('Sent: the file succesfully');
 		}
 	  });
 });
