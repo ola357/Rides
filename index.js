@@ -1,23 +1,29 @@
-const Joi = require('joi');
+import routes from './routes/routes';
+
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 app.use(express.json());
 
-
-const rides = [
-{rideId: 1, name: 'ola', ridesTaken: 0, ridesOffered: 0, gender: 'male',
- location: 'Mushin', destination:'lekki', accepted:false },
-{rideId: 2, name: 'ope', ridesTaken: 0, ridesOffered: 0, gender: 'male', 
-location: 'Mushin', destination:'lekki', accepted:true }
-];
+/*app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+*/
 
 app.get('/', (req, res)=>{
-	res.send('hello Olababa');
+	res.send('Hi! Welcome to Ride my Way');
+});
+
+// Ride Routes
+app.use(routes.router);
+
+// for invalid routes
+app.get('/*', (req, res) => {
+	res.status(404).send('Page NOT found');
 });
 
 //fetch all ride offers
-app.get('/api/v1/rides', (req, res) => {
-	res.sendFile('C:/Users/user 168/Documents/GitHub/Rides/rides.html', (err)=> {
+/* app.get('/api/v1/rides', (req, res) => {
+	res.send(rides, (err)=> {
 		if (err) {
 		  next(err);
 		} else {
@@ -82,8 +88,7 @@ app.post('/api/v1/rides/:rideId/request', (req, res) => {
 
 app.put('/api/v1/rides/:rideId', (req, res)=>{
 
-});
-
+}); */
 const port = process.env.PORT || 3000;
-
 app.listen(port, ()=> console.log(`listening on port ${port}...`));
+module.exports= index;
