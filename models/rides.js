@@ -1,27 +1,20 @@
 const rides = [
     {
       id: 1,
-      driver: 'Mr. Kingsley',
+      driver: 'Ope',
       location: 'Oshodi',
       destination: 'Yaba',
       date: '27-06-2018',
-      time: '12:00 p.m',
+      time: '8:00 a.m',
     },
     {
       id: 2,
-      driver: 'Mr. Obot',
-      location: 'Ikoyi',
-      destination: 'Port Harcourt',
+      driver: 'Ola',
+      location: 'Ilupeju',
+      destination: 'Anthony',
       date: '28-06-2018',
-      time: '1:00 p.m',
+      time: '6:00 p.m',
     },
-    {
-      id: 3,
-      driver: 'Mr. Micheal',
-      location: 'Oshodi',
-      destination: 'Lekki',
-      date: '28-06-2018',
-      time: '3:00 p.m',
-    },
+    
   ];
    module.exports=rides;

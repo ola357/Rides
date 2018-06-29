@@ -1,0 +1,31 @@
+.container{
+    display: block;
+    border-color: blue;
+    border-style: solid;
+    height: 100px;
+
+}
+.thumbnail{
+    display: -webkit-inline-box;
+    width: 10%;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    height: 60px;
+}
+.text{
+    display: -webkit-inline-box;
+    width: 50%;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    height: 60px;
+}
+.accdec {
+    padding: 5px;
+    float: right;
+    margin: 10px;
+    height: 60px;
+    border-style: solid;
+    border-color: rgb(255, 30, 0);
+} 
