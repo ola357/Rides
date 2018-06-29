@@ -4,7 +4,8 @@
   "description": "ride my way app, a car pooling app: andela challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,14 @@
   },
   "homepage": "https://github.com/ola357/Rides#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai-http": "^4.0.0",
     "express": "^4.16.3",
     "joi": "^13.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
   }
 }
