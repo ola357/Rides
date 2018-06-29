@@ -1,4 +1,4 @@
-ide-My-Way is a carpooling web application
+Ride-My-Way is a carpooling web application
 
 
 
