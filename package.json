@@ -1,0 +1,31 @@
+{
+  "name": "ridemyway-andela",
+  "version": "1.0.0",
+  "description": "ride my way app, a car pooling app: andela challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ola357/Rides.git"
+  },
+  "author": "Alli Olaoluwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ola357/Rides/issues"
+  },
+  "homepage": "https://github.com/ola357/Rides#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "joi": "^13.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  }
+}
