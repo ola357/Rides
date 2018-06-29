@@ -1,25 +1,26 @@
-import routes from './routes/routes';
+const routes = require('./routes/routes');
 
 const express = require('express');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); 
 const app = express();
 app.use(express.json());
 
-/*app.use(bodyParser.json());
+
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-*/
+
 
 app.get('/', (req, res)=>{
 	res.send('Hi! Welcome to Ride my Way');
 });
 
 // Ride Routes
-app.use(routes.router);
+app.use( routes.router);
 
 // for invalid routes
-app.get('/*', (req, res) => {
+/*app.get('/*', (req, res) => {
 	res.status(404).send('Page NOT found');
-});
+});*/
 
 //fetch all ride offers
 /* app.get('/api/v1/rides', (req, res) => {
@@ -89,6 +90,9 @@ app.post('/api/v1/rides/:rideId/request', (req, res) => {
 app.put('/api/v1/rides/:rideId', (req, res)=>{
 
 }); */
-const port = process.env.PORT || 3000;
+//const port = process.env.PORT || 3000;
+//app.listen(port, ()=> console.log(`listening on port ${port}...`));
+const port = parseInt(process.env.PORT, 10) || 3000;
 app.listen(port, ()=> console.log(`listening on port ${port}...`));
-module.exports= index;
+//app.listen(port);
+module.exports= app;

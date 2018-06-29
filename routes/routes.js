@@ -1,6 +1,5 @@
-import express from 'express';
-import ridesController from '../controllers/ridesController';
-
+const ridesController = require('../controllers/ridesController');
+const express = require('express');
 const router = express.Router();
 
 router.get('/api/v1/rides', ridesController.allRidesOffer);
@@ -14,4 +13,4 @@ router.delete('/api/v1/rides/:id', ridesController.deleteRideOffer);
 
 const routes = { router };
 
-export default routes;
+module.exports = routes;

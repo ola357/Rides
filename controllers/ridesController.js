@@ -1,6 +1,6 @@
+const rides = require ('../models/rides');
 
-
-const rides = [
+/*const rides = [
     {rideId: 1, name: 'ola', ridesTaken: 0,
      ridesOffered: 0, gender: 'male',location: 'Mushin',
      destination:'lekki', rideRequest:null, rideOfferResponse:null},
@@ -8,7 +8,7 @@ const rides = [
     {rideId: 2, name: 'ope', ridesTaken: 0,
      ridesOffered: 0, gender: 'male', location: 'Mushin', 
      destination:'lekki', rideRequest:null, rideOfferResponse:null }
-    ];
+]; */
 
 const ridesController = {
   // Get all ride offer
@@ -94,4 +94,4 @@ const ridesController = {
   },
 };
 
-export default ridesController;
+module.exports = ridesController;
